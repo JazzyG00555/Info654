@@ -1,0 +1,25 @@
+
+
+body {
+    font-family: 'Times New Roman', Times, sans-serif;
+    background-color: #b8e2be;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 85%;
+    height: auto;
+}
+
+
+body {
+    background-color: #f3f3f3 !important;
+}
+
+h1 {color: black;}
+#idname {font-size: 2.5 em;}
+div#idname {background-color: #f3f3f3;}
+.classname {font-weight: bold;}
+p.classname {color: blue;}
+
