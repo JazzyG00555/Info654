@@ -8,10 +8,40 @@ body {
 }
 
 img {
-    max-width: 85%;
+    max-width: 95%;
     height: auto;
 }
 
+
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-indent: 535px;
+    }
+
+
+h2 {
+    font-weight: bold;
+    text-indent: 285px;
+    }
+
+h3 {
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-indent: 10px;
+    }
+
+
+h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-indent: 35px;
+    }
+
+p {
+    text-indent: 10px;
+    }
 
 body {
     background-color: #f3f3f3 !important;
