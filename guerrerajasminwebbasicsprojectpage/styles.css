@@ -1,6 +1,5 @@
 
 
-
 img {
     border: 5px solid black;
     max-width: 95%;
@@ -8,18 +7,20 @@ img {
 }
 
 h1 {
-    color: black;
+    border: 5px double white;
+    color: white;
     font-size: 85px;
     font-weight: bold;
-    text-indent: 235px;
+    text-align: center;
+    background-color: #292929
     }
 
 h2 {
-    color: #d4d4d4;
+    color: white;
     font-size: 28px;
     font-weight: bold;
-    text-indent: 285px;
-    background-color: #292929
+    text-align: center;
+    background-color: #514f4f
     }
 
 h3 {
@@ -37,12 +38,24 @@ h4 {
     }
 
 p {
-    text-indent: 10px;
+    text-indent: 5px;
+    margin: 2;
+    padding: 15;
+}
     }
 
 body {
-    background-color: #b1eeb7!important;
+    background-color: #eef5ef!important;
+    margin: 2;
+    padding: 15;
 }
+
+
+<footer>id="footercenterred">Another Footer</footer>
+
+
+
+
 
 
 
