@@ -1,0 +1,25 @@
+#bio {
+    margin:185px; margin-right: 387px; float:right;
+}font-size: 25px; margin: 20px; margin-right: 487px; float:right;
+
+
+div {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 15px;
+    padding: 2px;
+}
+
+<div class="table">
+            <div class="row header">
+                <div class="cell">Project</div>
+                <div class="cell">Year</div>
+                <div class="cell">Running Time</div>
+                <div class="cell">Film Festival Circuit</div>
+            </div>
+            </div>
+            
+             <div class="row">
+                 <div class="cell">Ear-itation</div>
+            </div>
+   
