@@ -9,10 +9,11 @@ img {
 .highlight {
     color: black;
     font-size: 18px;
-    background-color: rgb(123, 255, 191);
+    background-color: rgb(185, 183, 183);
     text-indent: 8px;
     margin: 15px;
-    margin-right: 1000px;
+    margin-right: 55px;
+    text-align: center;
 }
 
 #special-text { 
