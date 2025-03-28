@@ -1,47 +1,46 @@
 
-img {
-    border: 5px solid black;
-    max-width: 95%;
-    height: auto;
+img { 
+    border: 5px solid black; 
+    max-width: 95%; 
+    height: auto; 
     margin: 15px;
 }
 
 .highlight {
     font-size: 18px;
-    color: black;
-    background-color: rgb(185, 183, 183);
     text-indent: 8px;
+    text-align: center;
     margin: 15px;
     margin-right: 55px;
-    text-align: center;
+    color: black;
+    background-color: rgb(185, 183, 183);
 }
 
 #special-text { 
-    color: black;
     font-size: 18px;
     font-weight: bold;
     border: 5px double black;
-    padding: 10px;
-    margin: 15px;
     border-radius: 75px; 
+    margin: 15px;
+    padding: 10px;
+    color: black;  
 }
 
 h1 {
     border: 5px double white;
-    color: white;
     font-size: 85px;
     font-weight: bold;
     text-align: center;
+    color: white;
     background-color: #292929
 }
 
 h2 {
-    color: white;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
-    background-color: #514f4f
-    
+    color: white;
+    background-color: #514f4f 
 }
 
 h3 {
@@ -52,33 +51,29 @@ h3 {
     padding: 7px;
 }
 
-
 h4 {
     font-weight: bold;
     text-transform: uppercase;
     margin: 15px;
     padding: 0px;
-    }
+}
 
 p {
     margin: 15px;
     padding: 0px;
 }
 
-
 body {
     background-color: #eef5ef;
 }
 
-
-
 footer {
-    color: #919191;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     margin: 15px;
     padding-top: 152px;
+    color: #919191;
 }
 
 
