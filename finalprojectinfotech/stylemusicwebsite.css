@@ -34,8 +34,8 @@ body {
     padding: 15px;
     width: 150px;
     text-align: center;
-    z-index: 120;
-    margin: 15px;
+    z-index: 150;
+    margin: 25px;
   }
 
   .year h3 {
@@ -70,8 +70,5 @@ body {
       margin-top: -5px;
     }
 
-     footer {
-     margin-top:auto;
-     padding: 55px;
-   }
+     
   }
