@@ -3,6 +3,7 @@
 
 body {background-color: rgb(208, 197, 164); display: flex; flex-direction:column; min-height:100vh;
 }
+
 #header {
     background: rgb(153, 157, 191); color:rgb(29, 20, 20); 
     border-bottom:3px solid rgb(57, 54, 80);
@@ -219,7 +220,18 @@ p {
   
   .italiancolumn {
     flex: 1;
-    background-color: #71cc85;
+    background-color: #c7e8e0;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #2f473b;
+    font-size: 18px;
+    margin-bottom: 20px
+  }
+  
+  .italiangreencolumn {
+    flex: 1;
+    background-color: #58f279;
     padding: 30px;
     text-align: center;
     border-radius: 8px;
@@ -227,7 +239,6 @@ p {
     font-size: 18px;
     margin-bottom: 20px
   }
-  
 
   .italianwhitecolumn {
     flex: 1;
@@ -242,9 +253,9 @@ p {
 
   .italianredcolumn {
     flex: 1;
-    background-color: #d18585;
+    background-color: #ff4747;
     padding: 30px;
-    text-align: center;
+    text-align: left;
     border-radius: 8px;
     border: 2px solid #c60000;
     font-size: 18px;
@@ -252,7 +263,7 @@ p {
   }
 
   .large-rectangle {
-    background-color: #71cc85;
+    background-color: #c7e8e0;
     padding: 40px;
     border-radius: 8px;
     border: 2px solid #00753a;
@@ -265,13 +276,56 @@ p {
     font-size: 22px;
   }
   
+  .italiangreencolumn h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 22px;
+  }
+  .italianwhitecolumn h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 22px;
+  }
+  .italianredcolumn h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 22px;
+  }
+
   .italiancolumn ul {
     list-style-type: disc;
     padding-left: 20px;
     text-align: left;
   }
-  
+     
+  .italiangreencolumn ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .italianwhitecolumn ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .italianredcolumn ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+  }
+
   .italiancolumn li {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+     
+  .italianwhitecolumn li {
+    font-size: 18px;
+    line-height: 1.6;
+  } 
+  .italianredcolumn li {
     font-size: 18px;
     line-height: 1.6;
   }
@@ -306,11 +360,11 @@ p {
     box-sizing: border-box;
   }
   .italianfull-width-heading {
-    background-color: #71cc85;
+    background-color: #c7e8e0;
     padding: 15px;
     text-align: center;
     border-radius: 8px;
-    border: 2px solid #00753a; 
+    border: 2px solid #2f473b; 
     font-size: 18px;
     color: rgb(16, 2, 48); 
     margin-left: auto;
@@ -329,7 +383,6 @@ p {
   h1{text-align: center;}
 
 body {
-    font-family: Arial, sans-serif;
     background: #ffffff;
     padding: 40px;
   }
@@ -363,7 +416,7 @@ body {
     padding: 15px;
     width: 150px;
     text-align: center;
-    z-index: 150;
+  
     margin: 25px;
   }
 

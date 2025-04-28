@@ -25,24 +25,7 @@
     </style>
 </head> 
 
-<script>
-async function loadDeezerCharts() {
-  const response = await fetch('https://api.deezer.com/chart/es/tracks');
-  const data = await response.json();
-  const container = document.getElementById('deezerCharts');
 
-  data.data.slice(0, 5).forEach(track => {
-    const trackDiv = document.createElement('div');
-    trackDiv.innerHTML = `
-      <p><strong>${track.artist.name}</strong> - ${track.title}</p>
-      <audio controls src="${track.preview}"></audio>
-    `;
-    container.appendChild(trackDiv);
-  });
-}
-
-document.addEventListener("DOMContentLoaded", loadDeezerCharts);
-  </script>
 
 <body>
     <div id="header">
@@ -56,14 +39,15 @@ document.addEventListener("DOMContentLoaded", loadDeezerCharts);
     </div>
 <div class="section-group">
     <div class="three-columns">
-        <div class="italiancolumn">
+        <div class="italiangreencolumn">
             <h3>Popular Genres</h3>
             <ul>
                 <li><a href="https://open.spotify.com/playlist/00x1ajm4qsiYqi1VtCGK9X" target="_blank">Italian Folk</a></li>
-                <li><a href="https://open.spotify.com/playlist/37i9dQZF1DWVAa4Dwc5f7L?si=Jca3HOJgQKWqNQwRhocr9Q" target="_blank">Tarantella</a></li>
-                <li><a href="https://open.spotify.com/playlist/37i9dQZF1DWY7IeIP1cdjF?si=8rsD9iC8Qh-kbUWBJUbtLg" target="_blank">Italian Pop</a></li>
-                <li><a href="https://open.spotify.com/playlist/37i9dQZF1DX65py6HnnlE1?si=4Mh4Nw5URECwa3T7dlpJSg" target="_blank">Opera</a></li>
-                <li><a href="https://open.spotify.com/playlist/37i9dQZF1DX1QnNyJOBQBv?si=AzPpqucdTIa2nbiClsRlIA" target="_blank">Italian Rock</a></li>
+                <li><a href="https://open.spotify.com/playlist/37i9dQZF1EIfsB0PTeZBEj" target="_blank">Tarantella</a></li>
+                <li><a href="https://open.spotify.com/playlist/37i9dQZF1EId8sNiDAP5xq" target="_blank">Italian Pop</a></li>
+                <li><a href="https://open.spotify.com/playlist/37i9dQZF1EIgPVYHYTGbuZ" target="_blank">Italian Opera</a></li>
+                <li><a href="https://open.spotify.com/playlist/37i9dQZF1EIgMKzW72eJQ1" target="_blank">Italian Rock</a></li>
+                <li><a href="https://open.spotify.com/playlist/37i9dQZF1DX3jWba5xiDhV" target="_blank">Italo Disco</a></li>
             </ul>
           </div>
           <div class="italianwhitecolumn">
