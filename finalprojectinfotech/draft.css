@@ -235,7 +235,7 @@ p {
     padding: 30px;
     text-align: center;
     border-radius: 8px;
-    border: 2px solid #00753a;
+    border: 2px solid #046d38;
     font-size: 18px;
     margin-bottom: 20px
   }
@@ -246,18 +246,18 @@ p {
     padding: 30px;
     text-align: center;
     border-radius: 8px;
-    border: 2px solid #8e8e8e;
+    border: 2px solid #3f3f3f;
     font-size: 18px;
     margin-bottom: 20px
   }
 
   .italianredcolumn {
     flex: 1;
-    background-color: #ff4747;
+    background-color: #fb6868;
     padding: 30px;
     text-align: left;
     border-radius: 8px;
-    border: 2px solid #c60000;
+    border: 2px solid #6a0000;
     font-size: 18px;
     margin-bottom: 20px
   }
@@ -321,6 +321,10 @@ p {
     line-height: 1.6;
   }
      
+  .italiangreencolumn li {
+    font-size: 18px;
+    line-height: 1.6;
+  }
   .italianwhitecolumn li {
     font-size: 18px;
     line-height: 1.6;
