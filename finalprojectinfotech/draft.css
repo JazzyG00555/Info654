@@ -148,9 +148,6 @@ p {
   }
 
 
-
-
-
 /*Italian Section*/
 
 body {background-color: rgb(208, 197, 164); display: flex; flex-direction:column; min-height:100vh;
@@ -457,7 +454,3 @@ body {
     }
      
   }
-
-
-
-  /*API Section*/
