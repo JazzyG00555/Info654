@@ -406,16 +406,18 @@ body {
     height: 5px;
     background: #2f473b;
     transform: translateY(50%);
-    z-index: 0;
+
   }
 
   .year {
     position: relative;
     background: #c7e8e0;
-    border: 2.5px solid #2f473b;
+    border: 1.5px solid #2f473b;
     border-radius: 12px;
-    padding: 75px;
-    width: 150px;
+    padding: 78px;
+    padding-top: 22px;
+    width: 250px;
+    height: 85px;
     text-align: center;
   
     margin: 25px;
