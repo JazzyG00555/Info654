@@ -16,14 +16,48 @@ h2 {text-align: center;}
 
 h4 {color: #2c3e50;}
 
-.heads{background: rgb(153, 157, 191); color:rgb(29, 20, 20); 
-    border-bottom:3px solid rgb(57, 54, 80);
-    margin-top: 0px;
-    padding: 10px 5px}
+.heads{
+   background: rgb(153, 157, 191); 
+   color:rgb(29, 20, 20); 
+   border-bottom:3px solid rgb(57, 54, 80);
+   margin-top: 0px;
+   padding: 10px 5px;
+  }
 
-.fullbutton{text-align: center; }
+.fullbutton{
+  margin-bottom: 15px; 
+  text-align: center; 
+  width: 88%; 
+  margin: 0 auto 20px auto; 
+  }
 
-.button{color: blue;}
+.button{  
+  display: block;
+  width: 88%;
+  text-transform: uppercase;
+  background-color: rgb(140, 142, 99); color:rgb(255, 255, 255);
+  border-radius: 28px;
+  border:3px solid rgb(57, 54, 80);
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 auto 20px auto;
+  margin-bottom: 20px;
+  }
+
+  .resource-info h3 {display: none;}
+
+  .column {
+  flex: 1;
+  background-color: #c7e8e0;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid #2f473b;
+  font-size: 18px;
+  margin-bottom: 20px
+  }
+  
+  .citation p {text-align: left;}
 </style>
 
 </head> 
@@ -42,16 +76,44 @@ h4 {color: #2c3e50;}
     <img src="./image/headphone.jpg" alt="headphone">
 </div>
 
-<!--API Section-->
+<div class="text">
+  <p>Welcome to a music website dedicated to teaching and informing the public about music from different ages and languages! Feel free to discover our other pages that explore Russian, Spanish and Italian music. You can also generate some songs below to further explore music from around the world!</p>
+</div>
+
+<!--Timeline Section-->
 <div>
+  <div class="timeline">
+  <div class="year">
+      <h3>1860</h3>
+      <h4> Top Russian Song</h4>
+      <p>"Kalinka" by Ivan Laringov</p>  
+  </div>
+  
+  <div class="year">
+  <h3>1880</h3>
+  <h4> Top Italian Song</h4>
+  <p>"Funiculì Funiculà" by Luigi Denza and Peppino Turco</p>
+  </div> 
+  
+  <div class="year">
+      <h3>2017</h3>
+      <h4> Top Spanish Song</h4>
+      <p>“Despacito” by Luis Fonsi & Daddy Yankee</p>  
+  </div>
+  </div>
+  </div>
+  <!--Timeline Section-->
+
+<!--API Section-->
+<div class="fullbutton"></div>
 <h2>Generate a Random Song Here!</h2>
-  <button onclick="getRandomSong()">Get Random Song</button>
+  <button class="button" onclick="generateaRandomSong()">Generate a Random Song</button>
   <div id="song-info"></div>
 
   <script>
     const accessToken = 'BQA5wUGDXgdTGbz_3fIFUEPddk0ABRZwyhqowjeJXZW5ZZBR-7Mk1DplSosN-NL1D-XXQKbQFXsC4CYgJhOTa2YOLTF7NiUIOHhI48TsScz-Wkd2ut76IaPrGN_rOx_ABjpsA8l8Jm0XrA46mB9J8UlYcXl5LadNIYdu0DS6gvrFQCgXKWCVJDqUU1EFUbALwpoOC9A0sZ-Mia71XMv8FboqKpCtGlO3jRVSXfgJe4FwSSMFKdhhHY1knQ'; // Replace with your actual access token
 
-    function getRandomLetter() {
+    function generateaRandomLetter() {
       const letters = 'abcdefghijklmnopqrstuvwxyz';
       return letters[Math.floor(Math.random() * letters.length)];
     }
@@ -86,49 +148,24 @@ h4 {color: #2c3e50;}
 </div>
 <!--API Section-->
 
-<div class="text">
-<p> </p>
-</div>
 
 
-<!--Timeline Section-->
-<div>
-<div class="timeline">
-<div class="year">
-    <h3>1860</h3>
-    <h4> Top Russian Song</h4>
-    <p>"Kalinka" by Ivan Laringov</p>  
-</div>
 
-<div class="year">
-<h3>1880</h3>
-<h4> Top Italian Song</h4>
-<p>"Funiculì Funiculà" by Luigi Denza and Peppino Turco</p>
-</div> 
-
-<div class="year">
-    <h3>2017</h3>
-    <h4> Top Spanish Song</h4>
-    <p>“Despacito” by Luis Fonsi & Daddy Yankee</p>  
-</div>
-</div>
-</div>
-<!--Timeline Section-->
 
 <!--Author Section-->
 <div class="heads">
-<h2>About the Authors</h2></div>
+<h2>About the Authors</h2>
+</div>
 
-    
 <div class="section-group">
     <div class="three-columns">
         <div class="column">
             <h3>Lauren Holmes</h3>
-            
+            <p>Lauren Holmes is...</p>
           </div>
           <div class="column">
             <h3>Marilyn Ray</h3>
-         
+            <p>Marilyn Ray is...</p>
           </div>
           <div class="column">
             <h3>Jasmin Rose Guerrera</h3>
@@ -138,20 +175,24 @@ h4 {color: #2c3e50;}
       </div>
 <!--Author Section-->
    
- <div class="fullbutton">
-<button class="button" onclick="MoreResources()">Click Here for More Resources!</button></div> </div> 
+<div class="fullbutton">
+<button class="button" onclick="MoreResources()">Click Here for More Resources!</button>
+</div> 
+
 <div id="resource-info"> 
-
 <div class="column">
-    <h3>More Resources</h3>
-    <p>Blah Blah Blah</p>
-  </div>
-  </div>
-
-<div id="footer">
-    <p>© Holmes Ray Guerrera 2025</p>
+  <h3>More Resources</h3>
+  <div class="citation">
+  <p>Neri, P. (2021, February 25). Top 13 most popular Italian Songs That Everybody Sings. The Italian Academy - Learn Italian in Sicily. <a href="https://www.theitalianacademy.com/top-popular-italian-songs/" target="_blank">https://www.theitalianacademy.com/top-popular-italian-songs/</a></p>
+  <p>Roiz, L. C., Luisa Calle, Ingrid Fajardo, Griselda Flores, Sigal Ratner-Arias, Isabela Raygoza, Jessica. (2023, December 4). The 50 best latin pop songs from 2000 to 2023, ranked. Billboard. <a href="https://www.billboard.com/lists/best-latin-pop-songs-21st-century/" target="_blank">https://www.billboard.com/lists/best-latin-pop-songs-21st-century/</a></p>
+  <p>Russian Folk Songs: 10 of the best. (2023, January 16). Classical Music. <a href="https://www.classical-music.com/features/works/russian-folk-songs" target="_blank">https://www.classical-music.com/features/works/russian-folk-songs</a></p>
+</div>
+</div>
 </div>
 
+<div id="footer">
+  <p>© Holmes Ray Guerrera 2025</p>
+</div>
 </div>
 
 <script>
