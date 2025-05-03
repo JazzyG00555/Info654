@@ -9,14 +9,21 @@
 
 <style>
 img {max-width:100%;} 
+
 footer {text-align: center;}
+
 h2 {text-align: center;}
+
 h4 {color: #2c3e50;}
+
 .heads{background: rgb(153, 157, 191); color:rgb(29, 20, 20); 
     border-bottom:3px solid rgb(57, 54, 80);
     margin-top: 0px;
     padding: 10px 5px}
 
+.fullbutton{text-align: center; }
+
+.button{color: blue;}
 </style>
 
 </head> 
@@ -77,13 +84,14 @@ h4 {color: #2c3e50;}
     }
   </script>
 </div>
-
 <!--API Section-->
 
 <div class="text">
 <p> </p>
 </div>
 
+
+<!--Timeline Section-->
 <div>
 <div class="timeline">
 <div class="year">
@@ -105,7 +113,9 @@ h4 {color: #2c3e50;}
 </div>
 </div>
 </div>
+<!--Timeline Section-->
 
+<!--Author Section-->
 <div class="heads">
 <h2>About the Authors</h2></div>
 
@@ -126,15 +136,34 @@ h4 {color: #2c3e50;}
           </div>
         </div>
       </div>
+<!--Author Section-->
    
+ <div class="fullbutton">
+<button class="button" onclick="MoreResources()">Click Here for More Resources!</button></div> </div> 
+<div id="resource-info"> 
+
 <div class="column">
     <h3>More Resources</h3>
     <p>Blah Blah Blah</p>
+  </div>
   </div>
 
 <div id="footer">
     <p>© Holmes Ray Guerrera 2025</p>
 </div>
+
+</div>
+
+<script>
+  function MoreResources() {
+    const section = document.getElementById('resource-info');
+    if (section.style.display === 'none') {
+      section.style.display = 'block';
+    } else {
+      section.style.display = 'none';
+    }
+  }
+</script>
 
 </body>
 
