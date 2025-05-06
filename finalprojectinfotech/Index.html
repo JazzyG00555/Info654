@@ -125,7 +125,7 @@ h4 {font-size: 20px; color:#2c3e50;}
   <script>
     const accessToken = 'BQA5wUGDXgdTGbz_3fIFUEPddk0ABRZwyhqowjeJXZW5ZZBR-7Mk1DplSosN-NL1D-XXQKbQFXsC4CYgJhOTa2YOLTF7NiUIOHhI48TsScz-Wkd2ut76IaPrGN_rOx_ABjpsA8l8Jm0XrA46mB9J8UlYcXl5LadNIYdu0DS6gvrFQCgXKWCVJDqUU1EFUbALwpoOC9A0sZ-Mia71XMv8FboqKpCtGlO3jRVSXfgJe4FwSSMFKdhhHY1knQ'; // Replace with your actual access token
 
-    function generateaRandomLetter() {
+    function getRandomLetter() {
       const letters = 'abcdefghijklmnopqrstuvwxyz';
       return letters[Math.floor(Math.random() * letters.length)];
     }
@@ -134,7 +134,7 @@ h4 {font-size: 20px; color:#2c3e50;}
       const query = getRandomLetter();
       const offset = Math.floor(Math.random() * 100);
       const url = `https://api.spotify.com/v1/search?q=${query}&type=track&limit=1&offset=${offset}`;
-
+      
       const response = await fetch(url, {
         headers: {
           'Authorization': 'Bearer ' + accessToken
@@ -153,9 +153,9 @@ h4 {font-size: 20px; color:#2c3e50;}
           ${track.preview_url ? `<audio controls src="${track.preview_url}"></audio>` : 'No preview available'}
         `;
       } else {
-        document.getElementById('song-info').innerText = 'No track found. Try again!';
+        document.getElementById('song-info').innerText = 'Sorry, no musical tracks found at this time! Please try again when you get an internet connection that is more rockn roll!';
       }
-    }
+    } 
   </script>
 <!--API Section-->
 
@@ -168,7 +168,7 @@ h4 {font-size: 20px; color:#2c3e50;}
     <div class="three-columns">
         <div class="column">
             <h3>Lauren Holmes</h3>
-            <p>Lauren Holmes is...</p>
+            <p>Lauren Holmes is from San Diego, California. She is currently a graduate student in Library and Information Sciences at Pratt Institute in New York City and completed her Bachelor's in English at San Diego State University and her Master's in Interdisciplinary Studies, Experimental Humanities and Social Engagement, at New York University. Lauren contributed to the Russian language page and parts of the homepage. Lauren's interest in Russian rock music history stems from an academic interest in historiography regarding the Eastern Bloc, the inner-workings of state socialism, and a deep love for rock music as resistance and escapism from oppressive regimes. She is currently learning Russian.</p>
           </div>
           <div class="column">
             <h3>Marilyn Ray</h3>
@@ -215,10 +215,7 @@ h4 {font-size: 20px; color:#2c3e50;}
     } else {
       section.style.display = 'none';
     }
-  }
-  
-
-  
+  } 
 </script>
 <!--Resource Script Section-->
 
