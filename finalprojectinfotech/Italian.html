@@ -119,7 +119,12 @@
 </div>
 
 <div><iframe class="newrelease" src="https://open.spotify.com/embed/playlist/0ZpYVvLjtMReufEoGwtvqC?utm_source=generator&theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-      
+  
+
+
+<div class="fullbutton">
+<button class="button" onclick="MoreResources()">Click Here for More Resources!</button>
+<div id="resource-info"> 
 <div class="italiancolumn">
 <h3>More Resources</h3>
 
@@ -151,11 +156,23 @@
 <p>Top Italian Artists. (n.d.). Last.Fm. Retrieved April 30, 2025, from <a href="https://www.last.fm/tag/italian/artists" target="_blank">https://www.last.fm/tag/italian/artists</a></p>
 </div> 
 </div>
+</div>
 
     <div id="footer">
       <p>© Holmes Ray Guerrera 2025</p>
     </div>
 </div>
+
+<script>
+  function MoreResources() {
+    const section = document.getElementById('resource-info');
+    if (section.style.display === 'none') {
+      section.style.display = 'block';
+    } else {
+      section.style.display = 'none';
+    }
+  } 
+</script>
 
 </body> 
 </html>
