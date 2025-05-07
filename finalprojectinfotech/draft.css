@@ -150,7 +150,7 @@ body {background-color: rgb(208, 197, 164); display: flex; flex-direction:column
 
 /*Italian Section*/
 
-body {background-color: rgb(208, 197, 164); display: flex; flex-direction:column; min-height:100vh;
+.italianbody {background-color: rgb(79, 11, 11); display: flex; flex-direction:column; min-height:100vh;
 }
 
 
@@ -298,11 +298,11 @@ body {background-color: rgb(208, 197, 164); display: flex; flex-direction:column
     width: 90%;
   }
   
-  .grid-box {
+  .italiangrid-box {
     width: 100%;
     height: auto;
     min-height: 360px;
-    background-color: #e3f6ef;
+    background-color: #ed3f0a;
     border: 1px solid #2f473b;
     border-radius: 6px;
     padding: 10px;
@@ -328,6 +328,8 @@ body {background-color: rgb(208, 197, 164); display: flex; flex-direction:column
 
 
 /*Russian Section*/
+.russianbody {background-color: rgb(7, 30, 105); display: flex; flex-direction:column; min-height:100vh;
+}
       
 .section-group {
   margin: 40px auto;
@@ -368,7 +370,7 @@ body {background-color: rgb(208, 197, 164); display: flex; flex-direction:column
   margin: 40px auto;
   width: 90%;
 }
-.grid-box {
+.russiangrid-box {
   width: 100%;
   height: auto;
   min-height: 360px;
