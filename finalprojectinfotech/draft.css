@@ -5,8 +5,8 @@ body {background-color: rgb(208, 197, 164); display: flex; flex-direction:column
 }
 
 #header {
-    background: rgb(153, 157, 191); color:rgb(29, 20, 20); 
-    border-bottom:3px solid rgb(57, 54, 80);
+    background: rgb(40, 7, 65); color:rgb(255, 255, 255); 
+    border-bottom:3px solid rgb(0, 0, 0);
     margin-top: 0px;
     padding: 10px 5px;
 }
@@ -21,8 +21,9 @@ body {background-color: rgb(208, 197, 164); display: flex; flex-direction:column
     position: fixed;
     bottom: 0;
     left: 0;
-    clear:left ; background:rgb(223, 187, 193);color:rgb(57, 54, 80);border-bottom:5px solid rgb(85, 59, 63);
-    }      
+    clear:left; background:rgb(40, 7, 65); color:rgb(255, 255, 255);border-bottom:5px solid rgb(85, 59, 63);
+    }  
+
 .tabs {
     display: flex;
     justify-content: space-between;
@@ -34,7 +35,7 @@ body {background-color: rgb(208, 197, 164); display: flex; flex-direction:column
     flex: 1;
     padding: 20px 0;
     margin: 0;
-    background-color: #ddf5ec;
+    background-color: #ffffff;
     border: 1px solid #ccc;
     text-align: center;
     text-decoration: none;
@@ -45,16 +46,14 @@ body {background-color: rgb(208, 197, 164); display: flex; flex-direction:column
     box-sizing: border-box;
   }
   .tab:hover {
-    background-color: #dfb0b0;
+    background-color: #df5fcc;
   }
   .tab.active {
-    background-color: rgb(208, 197, 164);
-    color: purple;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border-bottom: none;
   }
-p {
-    color: rgb(23, 9, 27);
-}
+  
 .section-group {
     margin: 40px auto;
     width: 90%;
@@ -70,17 +69,17 @@ p {
   
   .column {
     flex: 1;
-    background-color: #c7e8e0;
+    background-color: #a787ba;
     padding: 30px;
     text-align: center;
     border-radius: 8px;
-    border: 2px solid #2f473b;
+    border: 2px solid #463e48;
     font-size: 18px;
     margin-bottom: 20px;
   }
   
   .large-rectangle {
-    background-color: #e0f7f1;
+    background-color: #e0f7e0;
     padding: 40px;
     border-radius: 8px;
     border: 2px solid #2f473b;
@@ -153,56 +152,8 @@ p {
 
 body {background-color: rgb(208, 197, 164); display: flex; flex-direction:column; min-height:100vh;
 }
-#header {
-    background: rgb(153, 157, 191); color:rgb(29, 20, 20); 
-    border-bottom:3px solid rgb(57, 54, 80);
-    margin-top: 0px;
-    padding: 10px 5px
-}
-#footer {
-    width: 100%;
-    text-align: center;
-    border-radius:5px;
-    background-color: #333;
-    color: white;
-    padding: 1px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    clear:left ; background:rgb(223, 187, 193);color:rgb(57, 54, 80);border-bottom:5px solid rgb(85, 59, 63);
-    }      
-.tabs {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    border-top: 2px solid #ddd;
-    width: 100%
-  }
-  .tab {
-    flex: 1;
-    padding: 20px 0;
-    margin: 0;
-    background-color: #ddf5ec;
-    border: 1px solid #ccc;
-    text-align: center;
-    text-decoration: none;
-    color: #333;
-    border-radius: 0;
-    font-size: 20px; 
-    transition: background-color 0.3s;
-    box-sizing: border-box;
-  }
-  .tab:hover {
-    background-color: #dfb0b0;
-  }
-  .tab.active {
-    background-color: rgb(208, 197, 164);
-    color: purple;
-    border-bottom: none;
-  }
-p {
-    color: rgb(23, 9, 27);
-}
+
+
 .section-group {
     margin: 40px auto;
     width: 90%;
@@ -377,56 +328,7 @@ p {
 
 
 /*Russian Section*/
-
-#header {
-  background: rgb(191, 195, 226); color:rgb(29, 20, 20); 
-  border-bottom:3px solid rgb(57, 54, 80);
-  margin-top: 0px;
-  padding: 10px 5px;
-  text-align: center;
-}
-#footer {
-  width: 100%;
-  text-align: center;
-  border-radius:5px;
-  background-color: #333;
-  color: white;
-  padding: 1px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  clear:left ; background:rgb(111, 207, 223);color:rgb(57, 54, 80);border-bottom:5px solid rgb(85, 59, 63);
-  }  
       
-.tabs {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  border-top: 2px solid #ddd;
-  width: 100%
-}
-.tab {
-  flex: 1;
-  padding: 20px 0;
-  margin: 0;
-  background-color: #ddf5ec;
-  border: 1px solid #ccc;
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-  border-radius: 0;
-  font-size: 20px; 
-  transition: background-color 0.3s;
-  box-sizing: border-box;
-}
-.tab:hover {
-  background-color: #dfb0b0;
-}
-.tab.active {
-  background-color: rgb(208, 197, 164);
-  color: purple;
-  border-bottom: none;
-}
 .section-group {
   margin: 40px auto;
   width: 90%;
@@ -559,7 +461,7 @@ body {
 
   .year {
     position: relative;
-    background: #c7e8e0;
+    background: #e2c4f3;
     border: 1.5px solid #2f473b;
     border-radius: 12px;
     padding: 78px;
