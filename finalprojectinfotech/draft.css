@@ -182,7 +182,7 @@ body {background-color: rgb(208, 197, 164);
     border-radius: 8px;
     border: 2px solid #2f473b;
     font-size: 18px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
   
   .italiangreencolumn {
@@ -193,7 +193,7 @@ body {background-color: rgb(208, 197, 164);
     border-radius: 8px;
     border: 2px solid #046d38;
     font-size: 18px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
   .italianwhitecolumn {
@@ -204,7 +204,7 @@ body {background-color: rgb(208, 197, 164);
     border-radius: 8px;
     border: 2px solid #3f3f3f;
     font-size: 18px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
   .italianredcolumn {
@@ -215,7 +215,7 @@ body {background-color: rgb(208, 197, 164);
     border-radius: 8px;
     border: 2px solid #6a0000;
     font-size: 18px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
   .italiancolumn h3 {
@@ -224,7 +224,7 @@ body {background-color: rgb(208, 197, 164);
     font-size: 22px;
     text-align: center;
 }
-  
+
   .italiangreencolumn h3 {
     margin-top: 0;
     color: #000000;
@@ -363,8 +363,16 @@ body {background-color: rgb(208, 197, 164);
   border-radius: 8px;
   border: 2px solid #2f473b;
   font-size: 18px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
+
+.russian-column h3 {
+  margin-top: 0;
+  color: #000000;
+  font-size: 22px;
+  text-align: center;
+}
+
 
 .russian-column1 {
   flex: 1;
@@ -374,7 +382,18 @@ body {background-color: rgb(208, 197, 164);
   border-radius: 8px;
   border: 2px solid #2f473b;
   font-size: 18px;
-  margin-bottom: 20px
+  margin-bottom: 20px;  
+}
+
+.russian-column1 h3 {
+  margin-top: 0;
+  color: #000000;
+  font-size: 22px;
+  text-align: center;
+}
+
+  .russian-column1 h4 {
+    text-align: center;
 }
 
 .grid-20 {
