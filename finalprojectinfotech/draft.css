@@ -184,7 +184,8 @@ body {background-color: rgb(208, 197, 164);
     font-size: 18px;
     margin-bottom: 20px;
 }
-  
+#leftside { text-align: left;}
+
   .italiangreencolumn {
     flex: 1;
     background-color: #58f279;
@@ -294,7 +295,6 @@ body {background-color: rgb(208, 197, 164);
     border-radius: 8px;
     border: 1px solid #2f473b;
 }
-  
   .italiangrid-20 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
