@@ -12,19 +12,27 @@ img {
   max-width:100%; 
   padding-top: 15px; 
   padding-bottom: 15px; 
-  border-radius: 55px;} 
+  border-radius: 55px;
+} 
 
-footer {text-align: center;}
+footer {
+  text-align: center;
+}
 
 #header {
   width: 100%;
   text-align: center; 
   border-radius:5px;
-        }
+}
 
-h2 {text-align: center;}
+h2 {
+  text-align: center;
+}
 
-h4 {font-size: 20px; color:#2c3e50;}
+h4 {
+  font-size: 20px; 
+  color:#2c3e50;
+}
 
 .heads{
    background: rgb(40, 7, 65); 
@@ -34,11 +42,17 @@ h4 {font-size: 20px; color:#2c3e50;}
    padding: 10px 5px;
   }
 
-.year h3 {font-size: 25px;}
+.year h3 {
+  font-size: 25px;
+}
   
-.citation p {text-align: left;}
+.citation p {
+  text-align: left;
+}
 
-.leftside {text-align: left;}
+.leftside {
+  text-align: left;
+  }
 </style>
 </head> 
 
@@ -90,42 +104,6 @@ h4 {font-size: 20px; color:#2c3e50;}
 <div class="fullbutton">
   <button class="button" onclick="getRandomSong()">Generate a Random Song</button>
   <div id="song-info"></div></div>
-
-  <script>
-    const accessToken = 'BQA5wUGDXgdTGbz_3fIFUEPddk0ABRZwyhqowjeJXZW5ZZBR-7Mk1DplSosN-NL1D-XXQKbQFXsC4CYgJhOTa2YOLTF7NiUIOHhI48TsScz-Wkd2ut76IaPrGN_rOx_ABjpsA8l8Jm0XrA46mB9J8UlYcXl5LadNIYdu0DS6gvrFQCgXKWCVJDqUU1EFUbALwpoOC9A0sZ-Mia71XMv8FboqKpCtGlO3jRVSXfgJe4FwSSMFKdhhHY1knQ'; // Replace with your actual access token
-
-    function getRandomLetter() {
-      const letters = 'abcdefghijklmnopqrstuvwxyz';
-      return letters[Math.floor(Math.random() * letters.length)];
-    }
-
-    async function getRandomSong() {
-      const query = getRandomLetter();
-      const offset = Math.floor(Math.random() * 100);
-      const url = `https://api.spotify.com/v1/search?q=${query}&type=track&limit=1&offset=${offset}`;
-      
-      const response = await fetch(url, {
-        headers: {
-          'Authorization': 'Bearer ' + accessToken
-        }
-      });
-
-      const data = await response.json();
-      const track = data.tracks.items[0];
-
-      if (track) {
-        document.getElementById('song-info').innerHTML = `
-          <img src="${track.album.images[0].url}" width="300"><br>
-          <strong>${track.name}</strong><br>
-          Artist: ${track.artists[0].name}<br>
-          <a href="${track.external_urls.spotify}" target="_blank">Play on Spotify</a><br>
-          ${track.preview_url ? `<audio controls src="${track.preview_url}"></audio>` : 'No preview available'}
-        `;
-      } else {
-        document.getElementById('song-info').innerText = 'Sorry, no musical tracks found at this time! Please try again when you get an internet connection that is more rockn roll!';
-      }
-    } 
-  </script>
 <!--API Section-->
 
 <!--Author Section-->
@@ -150,7 +128,6 @@ h4 {font-size: 20px; color:#2c3e50;}
         </div>
       </div>
 <!--Author Section-->
-
 
 <!--Resource Section-->
 <div class="fullbutton">
@@ -178,7 +155,43 @@ h4 {font-size: 20px; color:#2c3e50;}
 </div>
 <!--Footer Section-->
 
-<!--Resource Script Section-->
+<!--API and Resource Script Section-->
+<script>
+  const accessToken = 'BQA5wUGDXgdTGbz_3fIFUEPddk0ABRZwyhqowjeJXZW5ZZBR-7Mk1DplSosN-NL1D-XXQKbQFXsC4CYgJhOTa2YOLTF7NiUIOHhI48TsScz-Wkd2ut76IaPrGN_rOx_ABjpsA8l8Jm0XrA46mB9J8UlYcXl5LadNIYdu0DS6gvrFQCgXKWCVJDqUU1EFUbALwpoOC9A0sZ-Mia71XMv8FboqKpCtGlO3jRVSXfgJe4FwSSMFKdhhHY1knQ'; // Replace with your actual access token
+
+  function getRandomLetter() {
+    const letters = 'abcdefghijklmnopqrstuvwxyz';
+    return letters[Math.floor(Math.random() * letters.length)];
+  }
+
+  async function getRandomSong() {
+    const query = getRandomLetter();
+    const offset = Math.floor(Math.random() * 100);
+    const url = `https://api.spotify.com/v1/search?q=${query}&type=track&limit=1&offset=${offset}`;
+    
+    const response = await fetch(url, {
+      headers: {
+        'Authorization': 'Bearer ' + accessToken
+      }
+    });
+
+    const data = await response.json();
+    const track = data.tracks.items[0];
+
+    if (track) {
+      document.getElementById('song-info').innerHTML = `
+        <img src="${track.album.images[0].url}" width="300"><br>
+        <strong>${track.name}</strong><br>
+        Artist: ${track.artists[0].name}<br>
+        <a href="${track.external_urls.spotify}" target="_blank">Play on Spotify</a><br>
+        ${track.preview_url ? `<audio controls src="${track.preview_url}"></audio>` : 'No preview available'}
+      `;
+    } else {
+      document.getElementById('song-info').innerText = 'Sorry, no musical tracks found at this time! Please try again when you get an internet connection that is more rockn roll!';
+    }
+  } 
+</script>
+
 <script>
   function MoreResources() {
     const section = document.getElementById('resource-info');
@@ -189,6 +202,6 @@ h4 {font-size: 20px; color:#2c3e50;}
     }
   } 
 </script>
-<!--Resource Script Section-->
+<!--API and Resource Script Section-->
 </body>
 </html>
