@@ -1,59 +1,95 @@
 
+    .first-box-container {
+        background-color: #c1addc;
+        padding: 12px;
+        margin-top: 75px;
+        border-radius: 15px;
+        margin: 6px;
+    }
+
+/*About Page Structure*/
+
         body {
-            /*trust the system ui fonts that are the default font of the operation system 0*/
-            font-family: system-ui, sans-serif;
-            /*this creates distance between copy lines like in Google docs*/
+           
+             font-family: 'Times New Roman', Times, serif;
             line-height: 1.6;
             margin: 28px;
             padding-left: 82px;
         }
+
         .container {
-            /*It's wide enough to accommodate complex layouts on desktop screens while not being so wide that it looks empty or sparse on larger monitors.*/
             max-width: 1200px;
-            /*sets the top and bottom margins of an element to 0 and centers it horizontally within its parent element.*/
             margin: 0 auto;
             padding: 20px;
         }
-        .top-half {
-            /* This It creates a flex formatting context for its contents. Child elements become flex items.
-It allows for powerful alignment and distribution of space among items in a container, even when their size is unknown or dynamic.*/
+
+        .top-half {  
             display: flex;  
-            /* Evenly distributes the flex items along the main axis.
-The first item is flush with the start edge of the container, and the last item is flush with the end edge.
-All remaining space is evenly distributed between the items.*/
             justify-content: space-between;
-            margin-bottom: 40px;
+            margin-bottom: 40px;            
         }
-        
+
+         .top-half h1{ 
+            margin-top: 20px;
+            border-radius: 15px; 
+            color: #ffffff; 
+            background-color: #725697;
+             border: 15px solid #725697; 
+            
+          
+}
+
+         .top-half img{ 
+            color: #ffffff; 
+            background-color: #725697;
+            padding-top: 0px }
+
         .top-container {
             /* notice this is as close to half giving a bit of space between copy and photo*/
             width: 48%;
+           
         }
+
         .bottom-half {
             display: flex;
             justify-content: space-between;
         }
+
         .bottom-container {
             /* the bottom containers also get a bit more spacing between them*/
             width: 100%;
-            
+     
         }
+
         img {
             /*this translates to make the photo the size of the container and adjust the height accordingly*/
-            max-width: 70%;
+           
+            
+            max-width: 72%;
             height: auto;
-            display: center;
-            padding-top: 12%;
+             
         }
+
         nav {
+            font-family: 'Times New Roman', Times, serif;
             margin-bottom: 20px;
         }
+
         nav a {
             margin-right: 10px;
             text-decoration: none;
             color: #333;
         }
 
+.font-size {
+    font-size: 19.5px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.paragraph-font-size{ font-size: 18px;
+     font-family: 'Times New Roman', Times, serif;
+}
+/*Columns Section*/
 
 .two-columns {
   display: flex;
@@ -61,39 +97,12 @@ All remaining space is evenly distributed between the items.*/
   justify-content: space-between;  
 }
 
-.left-column,
-.right-column {
-  flex: 2; 
-  min-width: 300px; }
 
-.left-column ul,
-.right-column ul {
-  list-style-type: disc; /* restore bullets */
-  padding-left: 20px;    /* indentation so bullets don’t overlap text */
-  margin: 0;}
 
-.left-column h2,
-.right-column h2 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.left-column ul,
-.right-column ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-        /*this allows us to make social media links icons that change color on hover*/
+/*Social Media Icons that change color on hover*/
         .social-icon {
             font-size: 24px;
             transition: color 0.3s ease;
-        }
-        .instagram-icon {
-            color: #333;
-        }
-        .instagram-icon:hover {
-            color: #833AB4;
         }
         .linkedin-icon {
             color: #333;
@@ -102,20 +111,36 @@ All remaining space is evenly distributed between the items.*/
             color: #00A0DC;
         }
 
-        h1, h3 {
+
+
+/*List and Text items*/       
+        h1 {
             color: #000000;
+        font-family: 'Times New Roman', Times, serif;}
+
+        h3 {
+            color: #000000;
+            font-family: 'Times New Roman', Times, serif;
         }
 
-        h2{ margin-left: 0px;}
+        h2{ 
+            margin-left: 0px;
+            font-family: 'Times New Roman', Times, serif;
+        
+        }
+
+        h4 {font-family: 'Times New Roman', Times, serif;}
         
         ul {
-            padding-left: 150px;
+            padding-left: 10px;
             margin: 0;
             margin-left: 0px;
+            font-family: 'Times New Roman', Times, serif;
         }
 
           ul.dashed {
             list-style-type: none;
+            font-family: 'Times New Roman', Times, serif;
     
           }
 
@@ -128,17 +153,761 @@ All remaining space is evenly distributed between the items.*/
             text-indent: -5px;
           }
 
+  /*Footer*/
+
         footer {
+            font-family: 'Times New Roman', Times, serif;
             text-align: center;
             color: rgb(255, 255, 255);
             margin-top: 40px;
             padding: 5px;
             padding-top: 10px;
-            background-color: #000000;
+            background-color: #725697;
+        }
+     
+
+
+/*Portfolio Gallery Pages*/
+
+   /*Description*/
+
+.double-columns{ display: flex;
+   gap: 5px;
+  justify-content: space-between;
+align-items: center;   } 
+
+.description{ 
+   flex: 1;
+   font-size: 28px;
+   margin-right: 35px;
+margin: 35px;
+font-family: 'Times New Roman', Times, serif;
+ }
+
+.description-rose{
+    flex-shrink: 0; 
+    max-width: 350px;
+    height: auto;
+    
+}
+
+.description-rose img {
+  width: 100%;          
+  height: auto;
+display: block;
+margin-top: 15px;
+margin-bottom: 15px;
+margin-left: 45px;
+}
+
+
+
+  /*Tabs Section*/
+
+.tabs {
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%
+}
+  .tab {
+    flex: 1;
+    padding: 20px 0;
+    margin: 0;
+    background-color: #e2e1e1;
+    border: 5px solid #ffffff;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border-radius: 15px;
+    font-size: 20px; 
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+    border-bottom: #e2e1e1;
+    font-family: 'Times New Roman', Times, serif;
+}
+  .tab:hover {
+    background-color: #df5fcc;
+}
+  .tab.active {
+    background-color: #725697;
+    color: rgb(255, 255, 255);
+    
+}  
+
+
+/*Images and Grids*/
+
+/*UX Projects Portfolio*/
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 80px; 
+            justify-content:center;
+             padding-top: 5%
+          }
+
+        .image-item {
+        position: relative;
+        overflow: hidden;
+    }
+          
+        .image-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: top;
+            display: block;
+            border-radius: 8px;         
+          }
+
+        .image-item img:hover{
+            opacity: 20%;
+        }
+    
+        .image-item p{
+           color:#333;
+            font-size: xx-large;
+            /*position tells us they want us to be absolute in the top position relative to where the copy lives on the image*/
+            position: absolute;
+            top:40%;
+            left: 10%;
+            opacity: 0; /* Hidden by default */
+        }
+
+        .image-item-boiler-plate {
+            background: #ffffff; 
+            overflow: hidden;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+    
+        .image-item-boiler-plate img{ 
+            max-width: 90%;   
+            height: auto;
+            margin: 0 auto;   
+            display: block; 
+            width: 550px;          /* fill the grid cell width */
+            height: 520px;        /* fixed height for all images */
+            object-fit: cover;    /* crop nicely, no stretching */
+            display: block;
+}
+  
+  .image-item-boiler-plate p{ 
+            max-width: 90%;   
+            height: auto;
+            margin: 0 auto;  
+            display: block;
+            margin: 10px;
+            font-size: 1.8rem;
+            color: #ffffff; 
         }
 
 
-        /*this collapses everything to one column at 768px*/
+        /*Overlay Options of UX Project Portfolio*/
+
+/*Container*/
+.image-overlay {
+position: relative;
+width: 550px;         
+height: 520px;     
+overflow: hidden;
+
+} 
+
+/*The image*/
+.image-overlay img {
+  width: 550px;         
+  height: 520px; 
+  object-fit: cover;     
+  transition: transform 0.5s ease;
+  
+}
+
+/*Transparent overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 326px;     
+  height: 550px; 
+  background: #3d2640f7;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  padding-left: 195px;
+  margin-left: 14px; 
+  display: flex;                
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+/*Centered Text*/
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;   
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* hover effects */
+.image-overlay:hover img {
+  transform: scale(1.05);
+}
+
+.image-overlay:hover .overlay {
+  opacity: 1;
+}
+
+.image-overlay:hover .overlay-text {
+  opacity: 1;
+
+}
+
+
+
+/*Animated Films Portfolio*/
+
+   .image-grid-two {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 80px; 
+            justify-content:center;
+            padding-top: 5%
+          }
+
+        
+  .image-item-boiler-plate-two{  
+            background: #ffffff; 
+            overflow: hidden;
+            display: flex;
+            text-align: center;
+            justify-content: center;   /* center horizontally */
+            align-items: center;
+            width: 100%
+          
+        }
+
+
+.image-item-boiler-plate-two img{ 
+            max-width: 90%;   
+            height: auto;
+            margin: 0 auto;   
+            display: block; 
+            width: 535px;          /* fill the grid cell width */
+            height: 555px;        /* fixed height for all images */
+            object-fit: cover;    /* crop nicely, no stretching */
+            display: block;
+           
+}
+
+.image-item-boiler-plate-two p{ 
+            max-width: 90%;   
+            height: auto;
+            margin: 0 auto;  
+            display: block;
+            margin: 10px;
+            font-size: 1.8rem;
+            color: #ffffff;
+            font-family: 'Times New Roman', Times, serif;
+         }
+
+
+/*Overlay Options of Animated Films Portfolio*/
+
+/*Container*/
+.image-overlay-two {
+position: relative;
+width: 535px;         
+height: 555px;  
+overflow: hidden;
+} 
+
+/*The image*/
+.image-overlay-two img {
+  width: 535px;         
+  height: 555px;    
+  object-fit: cover;     
+  transition: transform 0.5s ease;  
+}
+
+/*Transparent overlay */
+.overlay-two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 535px;         
+  height: 555px;
+  background: #3d2640f7;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  padding-left: 195px;
+  margin-left: 14px; 
+  align-items: center;
+  
+}
+
+/*Centered Text*/
+.overlay-text-two {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;   
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* hover effects */
+.image-overlay-two:hover img {
+  transform: scale(1.05);
+}
+
+.image-overlay-two:hover .overlay-two {
+  opacity: 1;
+}
+
+.image-overlay-two:hover .overlay-text-two {
+  opacity: 1;
+
+}
+
+
+/*Specific Ux Projects Portfolio Project Page*/
+
+.split-columns{
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-start;
+  gap: 30px;
+  
+}
+.overviewtext{
+padding:0 25px; 
+margin: 0;
+flex:1;
+max-width: 600px; 
+font-size: 25px;
+font-family: 'Times New Roman', Times, serif;}
+
+.overviewtext b{
+    
+font-size: 35px;
+font-family: 'Times New Roman', Times, serif;}
+
+.projectphoto{ 
+       
+        flex-shrink:0;
+        max-width:415px;
+         margin: 15px;
+         margin-bottom: 15px;
+        margin-right: 15px;       
+         }
+
+.projectphoto img{ 
+        max-width:95%;
+        height:auto;
+        display: block;  
+         }              
+
+.info-box-container {
+        background-color: #725697;
+        padding: 15px;
+        margin-top: 75px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius:15px;
+        margin-top: -18px;
+        margin-right: 21.2px;
+       }
+
+       .info-box-container b {
+       color: #ffffff;
+       width: 349px;
+       height: 95px;
+       font-family: 'Times New Roman', Times, serif;
+       }
+
+
+       .info-box-container p {
+       color: #e0dae9;
+       font-family: 'Times New Roman', Times, serif;
+       }
+
+.h2-elements{
+    padding-top: 55px;
+}
+
+.triple-column{
+display: flex;
+justify-content: space-between;
+position: relative;
+gap: 25px;
+border: #725697;
+}
+
+.triple-column h3{ 
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.design-box{
+  border: 5.5px solid #725697;
+  border-radius: 15px;
+  padding: 15px;
+  width: 278px;
+  height: 215px;
+  background-color: #ffffff;
+  margin: 15px;
+  padding-bottom: 65px;
+}
+
+.design-box h3{
+border: 3px solid #725697;
+border-bottom-left-radius: 15px;
+border-top-left-radius: 15px;
+text-align: center;
+background-color: #725697;
+width: 290px;
+height: 55px;
+padding-top: 15px;  
+}
+
+.title-spacing{
+    padding-top: 35px;
+}
+
+.prototype-column{
+justify-content: space-between;
+margin: 15px;
+}
+
+
+.prototype{
+justify-content: space-between;
+gap: 45px;
+text-align: center;
+}
+
+.prototype img{ 
+    width: 100%;
+    height: auto; 
+   display: right;
+   
+}
+
+.reflections-columns{
+
+border: 5.5px solid #725697;
+  border-radius: 15px;
+  padding: 15px;
+  width: 518px;
+  height: 285px;
+  background-color: #ffffff;
+  margin: 15px;
+  padding-bottom: 15px;
+
+}
+
+.reflections-columns h3{
+border: 11px solid #725697;
+border-bottom-left-radius: 15px;
+border-top-left-radius: 15px;
+text-align:center;
+background-color: #725697;
+color: #ffffff;
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+width: 501px;
+height: 38px;
+padding-top: 15px; 
+display:center;
+margin-right: 15px;
+margin-left: 15px;
+}
+
+
+
+
+/*Specific Animation Portfolio Project Pages*/
+
+
+.first-box-container-versiontwo {
+        background-color: #aab3f2;
+        padding: 12px;
+        margin-top: 75px;
+        border-radius: 15px;
+        margin: 6px;
+    }
+
+.split-columns-two{
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.overviewtext-two{
+padding:0 25px; 
+margin: 15px;
+flex:1;
+max-width: 600px; 
+font-size: 25px;
+font-family: 'Times New Roman', Times, serif;}
+
+.overviewtext-two b{
+font-size: 35px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+
+.overviewtext-two ul{
+padding:0 25px; 
+margin: 15px;
+flex:1;
+max-width: 600px; 
+font-size: 25px;
+font-family: 'Times New Roman', Times, serif;}
+
+.projectphoto-two{ 
+        flex-shrink: 0;
+        max-width:415px;
+         margin: 15px;
+        margin-right: 15px;       
+         }
+
+.projectphoto-two img{ 
+        max-width:95%;
+        height:auto;
+        display: block;  
+         }              
+
+.info-box-container-two {
+        background-color: #8f836c;
+        padding: 15px;
+        margin-top: 75px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius:15px;
+        margin-top: -89px;
+        margin-right: 21.2px;
+       }
+
+       .info-box-container-two b {
+       color: #ffffff;
+       width: 349px;
+       height: 95px;
+       font-family: 'Times New Roman', Times, serif;
+       }
+
+
+       .info-box-container-two p {
+       color: #e0dae9;
+       font-family: 'Times New Roman', Times, serif;
+       }
+
+.h2-elements-two{
+    padding-top: 55px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.triple-column-two{
+display: flex;
+justify-content: space-between;
+position: relative;
+gap: 25px;
+border: #725697;
+}
+
+.triple-column-two h3{ 
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.design-box-two{
+  border: 5.5px solid #725697;
+  border-radius: 15px;
+  padding: 15px;
+  width: 278px;
+  height: 215px;
+  background-color: #ffffff;
+  margin: 15px;
+  padding-bottom: 65px;
+}
+
+.triple-column-two img {
+
+width:35%;
+height:auto
+
+}
+
+
+.design-box-two h3{
+border: 3px solid #725697;
+border-bottom-left-radius: 15px;
+border-top-left-radius: 15px;
+text-align: center;
+background-color: #725697;
+width: 290px;
+height: 55px;
+padding-top: 15px;  
+}
+
+.title-spacing-two{
+    padding-top: 35px;
+}
+
+.materials-column{
+justify-content: space-between;
+margin: 15px;
+border: 5.5px solid #725697;
+padding: 15px;
+width: 495px;
+height: 668px;
+border-radius: 15px;
+padding-bottom: 65px;
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+.materials-column h3{
+border: 3px solid #725697;
+background-color: #725697;
+border-bottom-left-radius: 15px;
+border-top-left-radius: 15px;
+text-align: center;
+width: 493px;
+height: 55px;
+padding-top: 15px;  
+margin: 15px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.materials-column h4{
+border: 3px solid #725697;
+background-color: #725697;
+text-align: center;
+padding: 15px;
+width: 100%;
+height: 1px;
+border-radius: 15px;
+padding-bottom: 45px;
+color:white;
+font-size: 18px;
+font-family: 'Times New Roman', Times, serif;
+box-sizing: border-box; 
+align-items:center
+
+}
+
+.materials-column b{
+font-size: 18px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.results {
+    margin-top: 59px;
+}
+
+
+
+
+.design-box-festival-layout{
+  padding: 15px;
+  width: 588px;
+  height: 15px;
+  margin: 15px;
+  padding-bottom: 65px;
+}
+
+.festival-border{
+    border: 5.5px solid #725697;
+  border-radius: 15px;
+  width: 1878px;
+  height: 215px;
+  margin: 15px;
+}
+
+
+
+
+
+
+/*slider*/
+.photo-gallery-slider{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.slides{
+display: flex;
+transition: transform 0.8s ease-in-out;
+width: 100%;
+
+  
+}
+
+.slides img{
+max-width: 100%;
+height: auto;
+flex-shrink: 0;
+margin-left: 0px;
+margin-right: 10px;
+justify-content:center;
+align-items:center;
+/* padding-left: 120px;
+padding-right: 300px; */
+}
+
+.prev, .next {
+  position: absolute;
+  top: 2755px;
+  background: #725697;
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 15px;
+  
+}
+
+.prev { left: 338px; justify-content:center;
+align-items:center}
+.next { right: 338px;justify-content:center;
+align-items:center }
+
+ 
+
+
+
+
+
+
+
+
+
+
+  /*Responsive CSS*/
+       
         @media screen and (max-width: 768px) {
             .top-container,
             .bottom-container {
@@ -157,4 +926,17 @@ All remaining space is evenly distributed between the items.*/
             nav a {
                 margin: 5px 0;
             }
+
+            .image-grid {
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+
         }
+
+
+
+
+
+        
+        
